@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Water Distribution Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Water Distribution Dashboard</h1>
+  <p>City Water Authority. Simulated data. Normal pressure is 2 to 5 bar. Reservoir alert below 25%.</p>
+
+  <div class="box">
+    <button id="refreshBtn">Refresh</button>
+    <span id="updated"></span>
+  </div>
+
+  <h2>Distribution Zones</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Zone</th>
+        <th>Reservoir Level</th>
+        <th>Daily Supply (kL)</th>
+        <th>Pressure (bar)</th>
+        <th>Supply Timings</th>
+        <th>Network Status</th>
+      </tr>
+    </thead>
+    <tbody id="zoneRows"></tbody>
+  </table>
+
+  <h2>Maintenance Alerts</h2>
+  <ul id="alertList" class="box"></ul>
+
+  <p class="footer">24MIS0212 | SET I | <span id="release">Release 1.0</span></p>
+
+  <script src="water.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

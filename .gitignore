@@ -1,0 +1,8 @@
+.docker-ci/
+reports/
+__pycache__/
+node_modules/
+*.log
+*-kubeconfig*
+auth.json
+.env

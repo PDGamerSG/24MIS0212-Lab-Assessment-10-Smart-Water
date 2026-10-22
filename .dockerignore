@@ -1,0 +1,7 @@
+.git
+.docker-ci
+reports
+node_modules
+__pycache__
+*.log
+README.md
