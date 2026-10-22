@@ -11,8 +11,18 @@
   <p>City Water Authority. Simulated data. Normal pressure is 2 to 5 bar. Reservoir alert below 25%.</p>
 
   <div class="box">
+    <label for="zoneFilter">Zone:</label>
+    <select id="zoneFilter">
+      <option value="all">All zones</option>
+    </select>
     <button id="refreshBtn">Refresh</button>
     <span id="updated"></span>
+  </div>
+
+  <div class="summary">
+    <div class="box">Total Daily Supply<br><b id="totalSupply"></b></div>
+    <div class="box">Highest Consumption<br><b id="highestZone"></b></div>
+    <div class="box">Open Leakages<br><b id="openLeaks"></b></div>
   </div>
 
   <h2>Distribution Zones</h2>
@@ -22,6 +32,7 @@
         <th>Zone</th>
         <th>Reservoir Level</th>
         <th>Daily Supply (kL)</th>
+        <th>Consumption (kL)</th>
         <th>Pressure (bar)</th>
         <th>Supply Timings</th>
         <th>Network Status</th>
@@ -32,6 +43,20 @@
 
   <h2>Maintenance Alerts</h2>
   <ul id="alertList" class="box"></ul>
+
+  <h2>Leakage Incidents</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Incident</th>
+        <th>Zone</th>
+        <th>Severity</th>
+        <th>Detected At</th>
+        <th>Maintenance Status</th>
+      </tr>
+    </thead>
+    <tbody id="leakRows"></tbody>
+  </table>
 
   <p class="footer">24MIS0212 | SET I | <span id="release">Release 1.0</span></p>
 

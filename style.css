@@ -7,4 +7,6 @@ th, td { border: 1px solid #999; padding: 6px 8px; text-align: left; }
 th { background: #eee; }
 button, select { padding: 4px 10px; margin-right: 8px; }
 ul.box { padding-left: 30px; }
+.summary { display: flex; gap: 10px; }
+.summary .box { flex: 1; }
 .footer { font-size: 12px; color: #555; margin-top: 20px; }
